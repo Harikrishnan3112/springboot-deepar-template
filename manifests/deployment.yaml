@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: 127.0.0.1:8088/github_project/springboot-deepar-template:34
+        image: 127.0.0.1:8088/github_project/springboot-deepar-template:68
