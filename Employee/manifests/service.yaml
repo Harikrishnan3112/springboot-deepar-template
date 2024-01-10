@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: crud-app-service
+spec:
+  type: NodePort
+  ports:
+  - name: http
+    port: 80
+    targetPort: 9000
+    protocol: TCP
+  selector:
+    app: crud-app-service
