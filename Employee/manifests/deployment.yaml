@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crud-app
+  labels:
+    app: crud-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: crud-app
+  template:
+    metadata:
+      labels:
+        app: crud-app
+    spec:
+      containers:
+      - name: crud-app
+        image: 127.0.0.1:8088/github_project/crud:68
+      imagePullSecret:
+      - name: harbor
+        
